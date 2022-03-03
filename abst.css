@@ -1,56 +1,154 @@
-header {
-    background-color: gray;
-    color: white;
-    height: 5vh;
+/**** bodyタグによる全体の設定 ****/
+body {
+    width: 100vw;
     margin: 0px;
-    padding: 0px;
+    font-family: 'Franklin Gothic Medium', '游ゴシック', Arial, sans-serif;
 }
 
-.logo {
+
+/**** ここからヘッダーの設定 ****/
+
+/*** ヘッダー全体の設定 ***/
+header {
+    background-color:darkslategray;
+}
+
+/** ヘッダーのロゴの設定 **/
+.header_logo {
     float: left;
-    font-size: 200%;
-    margin: 10px;
-    margin-top: 5px;
+    font-size: 32px;
+    padding-top: 20px;
+    padding-left: 12px;
+    color: white;
 }
 
+/** ヘッダーのメニューの設定 **/
 header ul {
-    list-style: none;
     float: right;
-    margin-bottom: 0px;
-    padding: 0px;
-    width: 20%;
+    width: 25vw;
+    list-style: none;
+    padding-top: 16px;
+    padding-left: 0px;
+    padding-right: 12px;
+    margin-bottom: 12px;
+    font-size: 20px;
 }
 
-
-header li a {
-    float: left;
-    font-size: 120%;
-    margin-bottom: 0%;
-    padding-right: 2%;
-    padding-left: 2%;
+/** ヘッダーのリストの設定(横並びにする) **/
+header li {
+    display: inline-block;
     margin-right: 10%;
-    text-decoration:underline;
-    color: white;
 }
 
-header li a:hover {
-    background-color: black;
-    color: white;
-    transition-duration: 500ms;
-    border-radius: 10em;
-}
-
-header  li:last-child {
+/* ヘッダーのリスト内最後の項目の調整 */
+header li:last-child {
     margin-right: 0%;
 }
 
-
-footer {
-    background-color: gray;
+/** ヘッダー内リンクの装飾 **/
+header li a {
     color: white;
+    text-decoration: underline;
+    padding: 4px 8px;
 }
 
-body {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 0px;
+/* ヘッダー内リンクをマウスオーバー*/
+header li a:hover {
+    transition-duration: 500ms;
+    background-color: black;
+    border-radius: 10em;
+    color: white;
+    text-decoration: underline;
+}
+
+/**** ここからmainの設定 ****/
+
+/*** main全体の設定 横並びにしています ***/
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+/*** mainの画像表示ブロックの設定 ***/
+.main_imageblock {
+    border: 1px solid black;
+    width: 65vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main_image_slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.main_image_show {
+    border: 1px dotted black;
+    width: 480px;
+    height: 270px;
+    overflow: hidden;
+}
+
+.main_image_controller {
+    margin: 10%;
+}
+
+.main_image_number {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main_image_detail {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.dot {
+    height: 16px;
+    width: 16px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+
+/*** mainのテキスト表示ブロックの設定 ***/
+.main_textblock {
+    border: 1px dashed black;
+    width: 35vw;
+    padding: 10% 4vw;
+}
+
+/*** main テキストブロックの設定***/
+.main_textblock p {
+    font-size: 16px;
+}
+
+/* main テキストブロック pタグ (字下げをしたかった)*/
+.main_textblock p::before {
+    content: "　";
+}
+
+/**** ここからフッターの設定 ****/
+footer {
+    background-color:rgba(60, 128, 196, 0.5)
+}
+
+
+/**** containerを使用して全体をいじれるようにする ****/
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
 }
