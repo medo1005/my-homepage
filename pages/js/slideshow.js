@@ -1,8 +1,8 @@
 const pics = [
-    './img/flowers.jpg',
-    './img/piano.jpg',
-    './img/storm.jpg',
-    './img/trees.jpg'
+    '../img/flowers.jpg',
+    '../img/piano.jpg',
+    '../img/storm.jpg',
+    '../img/trees.jpg'
 ];
 
 const days = [
