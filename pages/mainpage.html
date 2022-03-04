@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>工事中</title>
         <link rel="stylesheet" href="css/mainpage.css">
+        <script src="./js/mainpage.js"></script>
     </head>
 
     <body>
@@ -12,9 +13,9 @@
             <header>
                 <div class="header_logo">medo's homepage</div>
                 <ul>
-                    <li><a href="exam.html">What is?</a></li>
-                    <li><a href="exam.html">Who is?</a></li>
-                    <li><a href="exam.html">Other</a></li>
+                    <li><a href="whatis.html">What is?</a></li>
+                    <li><a href="whois.html">Who is?</a></li>
+                    <li><a href="other.html">Other</a></li>
                 </ul>
             </header>
 
@@ -22,11 +23,11 @@
                 <div class="main_imageblock">
 
                     <div class="main_image_slider">
-                        <div class="main_image_controller" id="prev"> &lt; </div>
+                        <div class="main_image_controller" id="prev"> <button> &lt; </button> </div>
                         <div class="main_image_show">
-                            <img src="./img/storm.jpg" alt="">
+                            <img src="./img/storm.jpg" alt="" id="pic">
                         </div>
-                        <div class="main_image_controller" id="next"> &gt; </div>
+                        <div class="main_image_controller" id="next"> <button> &gt; </button> </div>
                     </div>
 
                     <div class="main_image_number">
@@ -36,7 +37,7 @@
                         <span class="dot" id="4"></span>
                     </div>
 
-                    <div class="main_image_detail">
+                    <div class="main_image_detail" id="pic_detail">
                         <p>てすとてすとてすとてすと <br>しけんしけんしけん <br>わからんｗ</p>
                         
                     </div>
