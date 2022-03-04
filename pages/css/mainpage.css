@@ -1,0 +1,154 @@
+/**** bodyタグによる全体の設定 ****/
+body {
+    width: 100vw;
+    margin: 0px;
+    font-family: 'Franklin Gothic Medium', '游ゴシック', Arial, sans-serif;
+}
+
+
+/**** ここからヘッダーの設定 ****/
+
+/*** ヘッダー全体の設定 ***/
+header {
+    background-color:darkolivegreen
+}
+
+/** ヘッダーのロゴの設定 **/
+.header_logo {
+    float: left;
+    font-size: 32px;
+    padding-top: 20px;
+    padding-left: 12px;
+    color: white;
+}
+
+/** ヘッダーのメニューの設定 **/
+header ul {
+    float: right;
+    width: 25vw;
+    list-style: none;
+    padding-top: 16px;
+    padding-left: 0px;
+    padding-right: 12px;
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+/** ヘッダーのリストの設定(横並びにする) **/
+header li {
+    display: inline-block;
+    margin-right: 10%;
+}
+
+/* ヘッダーのリスト内最後の項目の調整 */
+header li:last-child {
+    margin-right: 0%;
+}
+
+/** ヘッダー内リンクの装飾 **/
+header li a {
+    color: white;
+    text-decoration: underline;
+    padding: 4px 8px;
+}
+
+/* ヘッダー内リンクをマウスオーバー*/
+header li a:hover {
+    transition-duration: 500ms;
+    background-color: black;
+    border-radius: 10em;
+    color: white;
+    text-decoration: underline;
+}
+
+/**** ここからmainの設定 ****/
+
+/*** main全体の設定 横並びにしています ***/
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+/*** mainの画像表示ブロックの設定 ***/
+.main_imageblock {
+    width: 65vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main_image_slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.main_image_show {
+    border: 1px dotted black;
+    width: 640px;
+    height: 360px;
+    overflow: hidden;
+}
+
+.main_image_controller {
+    margin: 10%;
+}
+
+.main_image_number {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+
+.main_image_detail {
+    text-align: center;
+    border: 1px dashed black;
+}
+
+.dot {
+    height: 16px;
+    width: 16px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    border: 1px solid black;
+}
+
+
+
+/*** mainのテキスト表示ブロックの設定 ***/
+.main_textblock {
+    width: 35vw;
+    padding: 10% 4vw;
+}
+
+/*** main テキストブロックの設定***/
+.main_textblock p {
+    font-size: 16px;
+}
+
+/* main テキストブロック pタグ (字下げをしたかった)*/
+.main_textblock p::before {
+    content: "　";
+}
+
+/**** ここからフッターの設定 ****/
+footer {
+    background-color:powderblue;
+}
+
+
+/**** containerを使用して全体をいじれるようにする ****/
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}

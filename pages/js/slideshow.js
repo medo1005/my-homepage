@@ -20,7 +20,6 @@ let counter = 0;
 function slider() {
     counter++;
     counter = counter % pics.length;
-    console.log(counter);
     document.getElementById('pics').src = pics[counter];
 }
 
