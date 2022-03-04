@@ -1,7 +1,7 @@
 const pics = [
-    {src: "./img/1.jpg", txt: "水色の画像です"},
-    {src: "./img/2.jpg", txt: "黄緑の画像です"},
-    {src: "./img/3.jpg", txt: "紫の画像です"}
+    {src: "./src/img/1.jpg", txt: "水色の画像です"},
+    {src: "./src/img/2.jpg", txt: "黄緑の画像です"},
+    {src: "./src/img/3.jpg", txt: "紫の画像です"}
 ];
 
 let counter = 0;
