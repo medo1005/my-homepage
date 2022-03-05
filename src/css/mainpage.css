@@ -112,13 +112,13 @@ main {
 }
 
 .dot {
-    height: 16px;
-    width: 16px;
+    height: 14px;
+    width: 14px;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
     margin-right: 10px;
-    border: 1px solid black;
+    border: 2px solid black;
 }
 
 

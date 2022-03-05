@@ -5,21 +5,26 @@ const pics = [
 ];
 
 let counter = 0;
-let timer = 3000;
 let started = 0
 
-function picsSelecter(stat) {
+let prev_button;
+let next_button;
+
+let time = 5000;
+let timer = setInterval(picsSelecter, time, "next");
+
+function picsSelecter(e) {
     if (started == 0) {
         started = 1;
         return;
     }
-    if (stat == "prev") {
+    if (this.stat == "prev" || e == "prev") {
         if (counter == 0) {
             counter = pics.length;
         }
         counter--;
     }
-    else if (stat == "next") {
+    else if (this.stat == "next" || e == "next") {
         counter = counter + 1
         if (counter == pics.length) {
             counter = 0
@@ -29,10 +34,34 @@ function picsSelecter(stat) {
 }
 
 function picsShow() {
-    console.log(counter);
     document.getElementById("pic").src = pics[counter].src;
     document.getElementById("pic_detail").innerHTML = pics[counter].txt;
+    for (let index = 0; index < pics.length; index++) {
+        if (index == counter) {
+            document.getElementById(index.toString()).style.backgroundColor = "gray";
+        }
+        else {
+            document.getElementById(index.toString()).style.backgroundColor = "white";
+        }
+        
+    }
+}
+
+function setButton() {
+    prev_button = document.getElementById("prev");
+    next_button = document.getElementById("next");
+
+    prev_button.addEventListener('click', {stat: "prev", handleEvent: picsSelecter});
+    prev_button.addEventListener('click', timerReset);
+    next_button.addEventListener('click', {stat: "next", handleEvent: picsSelecter});
+    next_button.addEventListener('click', timerReset);
+}
+
+function timerReset() {
+    clearInterval(timer);
+    timer = setInterval(picsSelecter, time, "next");
 }
 
 window.addEventListener('load', picsShow);
-setInterval(picsSelecter, 5000, "next");
+window.addEventListener('load', setButton);
+
