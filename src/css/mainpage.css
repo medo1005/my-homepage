@@ -84,11 +84,9 @@ main {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
 }
 
 .main_image_show {
-    border: 1px dotted black;
     width: 640px;
     height: 360px;
     overflow: hidden;
@@ -102,13 +100,11 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border: 1px solid black;
 }
 
 
 .main_image_detail {
     text-align: center;
-    border: 1px dashed black;
 }
 
 .dot {
@@ -151,4 +147,17 @@ footer {
     flex-direction: column;
     width: 100vw;
     height: 100vh;
+}
+
+button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+}
+
+button:hover {
+    background-color: gray;
+    border-radius: 5px;
 }

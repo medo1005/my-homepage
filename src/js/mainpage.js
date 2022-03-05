@@ -14,10 +14,6 @@ let time = 5000;
 let timer = setInterval(picsSelecter, time, "next");
 
 function picsSelecter(e) {
-    if (started == 0) {
-        started = 1;
-        return;
-    }
     if (this.stat == "prev" || e == "prev") {
         if (counter == 0) {
             counter = pics.length;
