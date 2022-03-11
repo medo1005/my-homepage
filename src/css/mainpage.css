@@ -84,15 +84,14 @@ main {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
 }
 
 .main_image_show {
-    border: 1px dotted black;
     width: 640px;
     height: 360px;
     overflow: hidden;
 }
+
 
 .main_image_controller {
     margin: 10%;
@@ -102,13 +101,12 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border: 1px solid black;
+    margin-top: 5px;
 }
 
 
 .main_image_detail {
     text-align: center;
-    border: 1px dashed black;
 }
 
 .dot {
@@ -118,7 +116,7 @@ main {
     border-radius: 50%;
     display: inline-block;
     margin-right: 10px;
-    border: 2px solid black;
+    box-shadow: 1px 1px 1px black;
 }
 
 
@@ -144,6 +142,18 @@ footer {
     background-color:powderblue;
 }
 
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    padding-bottom: 10px;
+}
+
+footer li:last-child {
+    padding-bottom: 0px;
+}
+
 
 /**** containerを使用して全体をいじれるようにする ****/
 .container {
@@ -151,4 +161,19 @@ footer {
     flex-direction: column;
     width: 100vw;
     height: 100vh;
+}
+
+button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px gray;
+}
+
+button:hover {
+    background-color:lightslategrey
 }

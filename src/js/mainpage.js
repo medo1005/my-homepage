@@ -10,14 +10,10 @@ let started = 0
 let prev_button;
 let next_button;
 
-let time = 5000;
+let time = 10000;
 let timer = setInterval(picsSelecter, time, "next");
 
 function picsSelecter(e) {
-    if (started == 0) {
-        started = 1;
-        return;
-    }
     if (this.stat == "prev" || e == "prev") {
         if (counter == 0) {
             counter = pics.length;
@@ -38,10 +34,10 @@ function picsShow() {
     document.getElementById("pic_detail").innerHTML = pics[counter].txt;
     for (let index = 0; index < pics.length; index++) {
         if (index == counter) {
-            document.getElementById(index.toString()).style.backgroundColor = "gray";
+            document.getElementById("b" + index.toString()).style.backgroundColor = "gray";
         }
         else {
-            document.getElementById(index.toString()).style.backgroundColor = "white";
+            document.getElementById("b" + index.toString()).style.backgroundColor = "white";
         }
         
     }
