@@ -92,6 +92,7 @@ main {
     overflow: hidden;
 }
 
+
 .main_image_controller {
     margin: 10%;
 }
@@ -100,6 +101,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 5px;
 }
 
 
@@ -114,7 +116,7 @@ main {
     border-radius: 50%;
     display: inline-block;
     margin-right: 10px;
-    border: 2px solid black;
+    box-shadow: 1px 1px 1px black;
 }
 
 
@@ -140,6 +142,18 @@ footer {
     background-color:powderblue;
 }
 
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    padding-bottom: 10px;
+}
+
+footer li:last-child {
+    padding-bottom: 0px;
+}
+
 
 /**** containerを使用して全体をいじれるようにする ****/
 .container {
@@ -155,9 +169,11 @@ button {
     text-align: center;
     background-color: rgba(0, 0, 0, 0);
     border: 0px;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px gray;
 }
 
 button:hover {
-    background-color: gray;
-    border-radius: 5px;
+    background-color:lightslategrey
 }
