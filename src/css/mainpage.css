@@ -25,7 +25,7 @@ header {
 /** ヘッダーのメニューの設定 **/
 header ul {
     float: right;
-    width: 25vw;
+    width: 30vw;
     list-style: none;
     padding-top: 16px;
     padding-left: 0px;
@@ -37,7 +37,7 @@ header ul {
 /** ヘッダーのリストの設定(横並びにする) **/
 header li {
     display: inline-block;
-    margin-right: 10%;
+    margin-right: 2.5vw;
 }
 
 /* ヘッダーのリスト内最後の項目の調整 */
