@@ -1,0 +1,40 @@
+h1 {
+    border-bottom: 3px solid lightslategray;
+}
+
+.update_table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    overflow-x: scroll;
+    width: 60vw;
+    height: 60vh;
+    
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: scroll;
+}
+
+tr, th, td {
+    border: 1px solid black;
+}
+
+td {
+    text-align: center;
+    padding: 5px;
+}
+
+th {
+    border-bottom: 3px solid black;
+}
+
+thead {
+    background-color: aquamarine;
+}
+
+tbody tr:nth-child(odd){
+    background-color: lightcyan;
+}
