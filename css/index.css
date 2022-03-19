@@ -1,0 +1,39 @@
+header, main, footer {
+    animation-name: animation;
+    animation-duration: 3.0s;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    display: inline-block;
+    border: 2px solid #3f3f3f;
+    border-radius: 25em;
+    padding: 12px;
+    margin-bottom: 12px;
+    width: 256px;    
+}
+
+.message {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.message h2 {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+@keyframes animation {
+    0% {
+        opacity: 0;
+        transform: translateY(60px)
+    };
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
