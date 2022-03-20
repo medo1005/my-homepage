@@ -9,7 +9,7 @@ footer
 
 .container {
     font-family: 'Meiryo', 'Arial', sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     background-color: #eee;
     display: flex;
     flex-direction: column;
@@ -20,26 +20,26 @@ footer
 
 header, main, footer {
     margin: 0 auto;
-    width: 1200px;
-    margin-bottom: 20px;
+    width: 100vw;
+    margin-bottom: 10px;
 }
 
 .heading {
     display: flex;
-    margin-left: 12px;
-    margin-bottom: 12px;
+    margin-left: 6px;
+    margin-bottom: 6px;
 }
 
 .heading h1{
     font-weight: bold;
-    font-size: 32px;
-    margin-top: 40px;
-    margin-left: 12px;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 6px;
 }
 
 header img {
-    margin-top: 12px;
-    margin-bottom: 12px;
+    margin-top: 6px;
+    margin-bottom: 6px;
 }
 
 header ul {
@@ -48,16 +48,16 @@ header ul {
 }
 
 header ul li {
-    width: 240px;
-    min-width: 240px;
+    width: 18vw;
+    min-width: 18vw;
     text-align: center;
-    border-left: 2px #ccc solid;
-    font-size: 20px;
+    border-left: 1px #ccc solid;
+    font-size: 12px;
     font-weight: bold;
 }
 
 header ul li:last-child {
-    border-right: 2px #ccc solid;
+    border-right: 1px #ccc solid;
 }
 
 header ul li a {
@@ -78,6 +78,161 @@ main {
 footer {
     text-align: center;
     color: gray;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
 }
+
+@media screen and (min-width:630px) {
+    .container {
+        font-family: 'Meiryo', 'Arial', sans-serif;
+        font-size: 16px;
+        background-color: #eee;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        min-height: 100vh;
+    }
+    
+    
+    header, main, footer {
+        margin: 0 auto;
+        width: 600px;
+        margin-bottom: 20px;
+    }
+    
+    .heading {
+        display: flex;
+        margin-left: 12px;
+        margin-bottom: 12px;
+    }
+    
+    .heading h1{
+        font-weight: bold;
+        font-size: 32px;
+        margin-top: 40px;
+        margin-left: 12px;
+    }
+    
+    header img {
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    
+    header ul {
+        display: flex;
+        
+    }
+    
+    header ul li {
+        width: 120px;
+        min-width: 120px;
+        text-align: center;
+        border-left: 2px #ccc solid;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+    header ul li:last-child {
+        border-right: 1px #ccc solid;
+    }
+    
+    header ul li a {
+        display: block;
+    }
+    
+    header ul li a:hover {
+        background-color: #ddd;
+    }
+    
+    main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    footer {
+        text-align: center;
+        color: gray;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .container {
+        font-family: 'Meiryo', 'Arial', sans-serif;
+        font-size: 16px;
+        background-color: #eee;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        min-height: 100vh;
+    }
+    
+    
+    header, main, footer {
+        margin: 0 auto;
+        width: 1200px;
+        margin-bottom: 20px;
+    }
+    
+    .heading {
+        display: flex;
+        margin-left: 12px;
+        margin-bottom: 12px;
+    }
+    
+    .heading h1{
+        font-weight: bold;
+        font-size: 32px;
+        margin-top: 40px;
+        margin-left: 12px;
+    }
+    
+    header img {
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    
+    header ul {
+        display: flex;
+        
+    }
+    
+    header ul li {
+        width: 240px;
+        min-width: 240px;
+        text-align: center;
+        border-left: 2px #ccc solid;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    header ul li:last-child {
+        border-right: 2px #ccc solid;
+    }
+    
+    header ul li a {
+        display: block;
+    }
+    
+    header ul li a:hover {
+        background-color: #ddd;
+    }
+    
+    main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    footer {
+        text-align: center;
+        color: gray;
+        margin-bottom: 80px;
+    }
+}
+
+
+
 
