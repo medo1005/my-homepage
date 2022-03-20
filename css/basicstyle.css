@@ -82,6 +82,100 @@ footer {
     margin-bottom: 30px;
 }
 
+#loading {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.dots {
+    height: 100vh;
+    width: 20vw;
+    margin: 0  auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dot {
+    border: 2px solid mediumaquamarine;
+    background-color: mediumaquamarine;
+    border-radius: 25em;
+    width: 18px;
+    height: 18px;
+    margin: 0 auto;
+    animation-name: dotjump;
+    animation-duration: 2500ms;
+    animation-iteration-count: infinite;
+
+}
+
+.dot1 {
+    animation-delay: 0ms;
+}
+
+.dot2 {
+    animation-delay: 50ms;
+}
+
+.dot3 {
+    animation-delay: 100ms;
+}
+
+.dot4 {
+    animation-delay: 150ms;
+}
+
+.dot5 {
+    animation-delay: 200ms;
+}
+
+.dot6 {
+    animation-delay: 250ms;
+}
+
+.dot7 {
+    animation-delay: 300ms
+}
+
+.dot8 {
+    animation-delay: 350ms
+}
+
+@keyframes dotjump {
+    0% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    5% {
+        opacity: 1;
+        transform: translateY(10px);
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateY(-100px)
+    }
+
+    75% {
+        opacity: 1;
+        transform: translateY(15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
+.loaded {
+    opacity: 0;
+    visibility: hidden;
+}
+
 @media screen and (min-width:630px) {
     .container {
         font-family: 'Meiryo', 'Arial', sans-serif;

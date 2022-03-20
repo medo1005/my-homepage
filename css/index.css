@@ -9,11 +9,11 @@ header, main, footer {
 
 .logo img {
     display: inline-block;
-    border: 2px solid #3f3f3f;
+    border: 1px solid #3f3f3f;
     border-radius: 25em;
-    padding: 12px;
-    margin-bottom: 12px;
-    width: 256px;    
+    padding: 4px;
+    margin-bottom: 4px;
+    width: 96px;    
 }
 
 .message {
@@ -23,9 +23,44 @@ header, main, footer {
 }
 
 .message h2 {
-    font-size: 32px;
-    margin-bottom: 16px;
+    font-size: 16px;
+    margin-bottom: 8px;
 }
+
+@media screen and (min-width:630px) {
+    .logo img {
+        display: inline-block;
+        border: 1px solid #3f3f3f;
+        border-radius: 25em;
+        padding: 8px;
+        margin-bottom: 8px;
+        width: 128px;    
+    }
+
+    .message h2 {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    
+    .logo img {
+        display: inline-block;
+        border: 2px solid #3f3f3f;
+        border-radius: 25em;
+        padding: 12px;
+        margin-bottom: 12px;
+        width: 256px;    
+    }
+
+    .message h2 {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+    
+}
+
 
 @keyframes animation {
     0% {
