@@ -102,6 +102,21 @@ footer {
     align-items: center;
 }
 
+
+.dot {
+    border: 2px solid mediumaquamarine;
+    background-color: mediumaquamarine;
+    border-radius: 25em;
+    width: 18px;
+    height: 18px;
+    margin: 0 auto;
+    animation-name: dotjump;
+    animation-duration: 2500ms;
+    animation-iteration-count: infinite;
+
+}
+
+
 .dot1 {
     animation-delay: 0ms;
 }
@@ -134,6 +149,7 @@ footer {
     animation-delay: 350ms
 }
 
+
 .dot {
     border: 2px solid mediumaquamarine;
     background-color: mediumaquamarine;
@@ -146,6 +162,7 @@ footer {
     animation-iteration-count: infinite;
 
 }
+
 
 @keyframes dotjump {
     0% {
