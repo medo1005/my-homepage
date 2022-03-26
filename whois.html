@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/basicstyle.css">
     <link rel="stylesheet" href="./css/whois.css">
     <script src="./js/load.js"></script>
+    <script src="./js/whois.js"></script>
 </head>
 <body>
     <!--ローディング画面-->
@@ -47,12 +48,52 @@
             </div>
         </header>
         <main>
-            <h1>工事中です</h1>
-            <h1>who is ページ</h1>
+            <div class="icon" id="icon">
+                <img src="./src/img/block_silhouette_expand.png" alt="" id="iconimg">
+                <span>
+                    工事中です
+                </span>
+            </div>
+            <div class="introduce">
+                <div class="item">
+                    <h2>工事中です</h2>
+                    <p>
+                    工事中です
+                    </p>
+                </div>
+                
+
+                <div class="item">
+                    <h2>工事中です</h2>
+                    <p>
+                    工事中です
+                    </p>
+                </div>
+
+                <div class="item">
+                    <h2>工事中です</h2>
+                    <p>
+                    工事中です
+                    </p>
+                </div>
+            </div>
         </main>
         <footer>
             <p>Ryugo Masadome 2022</p>
-            <p>Last Updated 2022/03/21 00:00-01:00</p>
+            <p id="modified">
+                <script>
+                    const date = new Date(document.lastModified);
+                    const year = date.getFullYear().toString()
+                    const month = (date.getMonth()+1).toString().padStart(2, '0');
+                    const day = date.getDate().toString().padStart(2, '0');
+                    const hour = date.getHours().toString().padStart(2, '0');
+                    const min = date.getMinutes().toString().padStart(2, '0');
+                    const sec = date.getSeconds().toString().padStart(2, '0');
+                    var modified = document.getElementById('modified');
+                    var date_txt =  year+'-'+month+'-'+day+' '+hour+':'+min+':'+sec;
+                    modified.innerHTML = "Last Updated "+date_txt; 
+                </script>
+            </p>
         </footer>
     </div>
 </body>
