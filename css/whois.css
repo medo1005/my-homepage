@@ -20,12 +20,158 @@ main {
 1281px~
 でブレークポイントを設定する
 */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.icon {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon img {
+    width: 60%;
+    padding: 5px;
+    background-color: cadetblue;
+    border: 1px solid transparent;
+    border-radius: 25em;
+    transition-duration: 500ms;
+    margin-bottom: 16px;
+}
+
+
+
+
+.introduce {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    width: 70%;
+}
+
+.item:last-child {
+    margin-bottom: 0;
+}
+
+.item h2 {
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: underline;
+    margin-left: 1em;
+    margin-bottom: 1rem;
+
+}
+
+.item p {
+    width: 80%;
+    font-size: 12px;
+    text-indent: 12px;
+    margin: 0 auto;
+    line-height: 150%;
+}
+
+.item h2::after, .item h2::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg);
+    background-color: cadetblue;
+    display: inline-block;
+    margin-left: 8px;
+    margin-right: 8px;
+}
 
 
 
 @media screen and (min-width: 680px) {
-    
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .icon {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon img {
+        width: 50%;
+        padding: 5px;
+        background-color: cadetblue;
+        border: 1px solid transparent;
+        border-radius: 25em;
+        transition-duration: 500ms;
+        margin-bottom: 16px;
+    }
+
+
+
+
+    .introduce {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .item {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+        width: 70%;
+    }
+
+    .item:last-child {
+        margin-bottom: 0;
+    }
+
+    .item h2 {
+        font-weight: bold;
+        font-size: 16px;
+        text-decoration: underline;
+        margin-left: 1em;
+        margin-bottom: 1rem;
+
+    }
+
+    .item p {
+        width: 80%;
+        font-size: 12px;
+        text-indent: 12px;
+        margin: 0 auto;
+        line-height: 150%;
+    }
+
+    .item h2::after, .item h2::before {
+        content: '';
+        width: 12px;
+        height: 12px;
+        transform: rotate(45deg);
+        background-color: cadetblue;
+        display: inline-block;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
 }
 
 @media screen and (min-width: 1280px) {
