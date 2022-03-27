@@ -27,20 +27,22 @@ main {
 }
 
 .icon {
-    width: 40%;
+    width: 60%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
 }
 
 .icon img {
-    width: 100%;
+    width: 50%;
     padding: 5px;
     background-color: cadetblue;
     border: 1px solid transparent;
-    border-radius: 25em;
+    border-radius: 50em;
     transition-duration: 500ms;
     margin-bottom: 16px;
 }
@@ -54,6 +56,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .item {
@@ -63,9 +66,6 @@ main {
     width: 70%;
 }
 
-.item:last-child {
-    margin-bottom: 0;
-}
 
 .item h2 {
     font-weight: bold;
@@ -97,7 +97,7 @@ main {
 
 
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 630px) {
     main {
         display: flex;
         flex-direction: row;
